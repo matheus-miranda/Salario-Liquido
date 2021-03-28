@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityMain">
+
+    <TextView
+        android:id="@+id/tv_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/main_calculadora_salario"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_brute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_salario_bruto"
+        android:layout_marginEnd="@dimen/main_tv_margin_right"
+        app:layout_constraintBottom_toBottomOf="@+id/et_salary"
+        app:layout_constraintEnd_toStartOf="@+id/et_salary"
+        app:layout_constraintTop_toTopOf="@+id/et_salary" />
+
+    <TextView
+        android:id="@+id/tv_dep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_num_dependents"
+        android:layout_marginEnd="@dimen/main_tv_margin_right"
+        app:layout_constraintBottom_toBottomOf="@+id/et_dependents"
+        app:layout_constraintEnd_toStartOf="@+id/et_dependents"
+        app:layout_constraintTop_toTopOf="@+id/et_dependents" />
+
+    <TextView
+        android:id="@+id/tv_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/main_tv_margin_right"
+        android:text="@string/main_outros_descontos"
+        app:layout_constraintBottom_toBottomOf="@+id/et_other_discounts"
+        app:layout_constraintEnd_toStartOf="@+id/et_other_discounts"
+        app:layout_constraintTop_toTopOf="@+id/et_other_discounts" />
+
+    <EditText
+        android:id="@+id/et_salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/main_et_margin_right"
+        android:ems="4"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/et_dependents"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_calculate"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/et_dependents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/main_et_margin_right"
+        android:ems="4"
+        android:maxLength="2"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/et_other_discounts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_salary"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/et_other_discounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/main_et_margin_right"
+        android:ems="4"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/btn_calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_dependents"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor"/>
+
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_btn_calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_other_discounts" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

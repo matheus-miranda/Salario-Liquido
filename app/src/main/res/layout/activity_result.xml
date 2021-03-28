@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityResult">
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/result_tv_resultado"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_gross_salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_tv_1000"
+        app:layout_constraintBottom_toTopOf="@+id/tv_inss"
+        app:layout_constraintEnd_toStartOf="@+id/gdl_right"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result" />
+
+    <TextView
+        android:id="@+id/tv_inss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_tv_1000"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toTopOf="@+id/tv_irrf"
+        app:layout_constraintEnd_toStartOf="@+id/gdl_right"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gross_salary" />
+
+    <TextView
+        android:id="@+id/tv_v_irrf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_tv_irrf"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_irrf"
+        app:layout_constraintStart_toStartOf="@+id/gdl_left"
+        app:layout_constraintTop_toTopOf="@+id/tv_irrf" />
+
+    <TextView
+        android:id="@+id/tv_v_bruto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_sal_bruto"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_gross_salary"
+        app:layout_constraintStart_toStartOf="@+id/gdl_left"
+        app:layout_constraintTop_toTopOf="@+id/tv_gross_salary"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_v_inss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_inss"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_inss"
+        app:layout_constraintStart_toStartOf="@+id/gdl_left"
+        app:layout_constraintTop_toTopOf="@+id/tv_inss" />
+
+    <TextView
+        android:id="@+id/tv_irrf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_tv_1000"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toTopOf="@+id/tv_other_discounts"
+        app:layout_constraintEnd_toStartOf="@+id/gdl_right"
+        app:layout_constraintTop_toBottomOf="@+id/tv_inss" />
+
+    <TextView
+        android:id="@+id/tv_v_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_desc"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_other_discounts"
+        app:layout_constraintStart_toStartOf="@+id/gdl_left"
+        app:layout_constraintTop_toTopOf="@+id/tv_other_discounts" />
+
+    <TextView
+        android:id="@+id/tv_other_discounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_tv_1000"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toStartOf="@+id/gdl_right"
+        app:layout_constraintTop_toBottomOf="@+id/tv_irrf" />
+
+    <TextView
+        android:id="@+id/tv_other_discount_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_tv_1000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_back"
+        app:layout_constraintEnd_toStartOf="@+id/gdl_right"
+        app:layout_constraintTop_toBottomOf="@+id/tv_net_salary" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/tv_net_salary"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_other_discounts" />
+
+    <TextView
+        android:id="@+id/tv_v_liquido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_sal_liq"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_net_salary"
+        app:layout_constraintStart_toStartOf="@+id/gdl_left"
+        app:layout_constraintTop_toTopOf="@+id/tv_net_salary" />
+
+    <TextView
+        android:id="@+id/tv_net_salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_tv_1000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_other_discount_percent"
+        app:layout_constraintEnd_toStartOf="@+id/gdl_right"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/tv_v_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_descontos"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_other_discount_percent"
+        app:layout_constraintStart_toStartOf="@+id/gdl_left"
+        app:layout_constraintTop_toTopOf="@+id/tv_other_discount_percent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gdl_right"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/gdl_left"
+        app:layout_constraintTop_toBottomOf="@+id/tv_other_discount_percent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdl_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="50dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdl_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="50dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

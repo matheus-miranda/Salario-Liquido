@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Activity Main -->
+    <dimen name="main_tv_margin_right">16dp</dimen>
+    <dimen name="main_et_margin_right">60dp</dimen>
+</resources>

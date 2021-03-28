@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Salário Líquido</string>
+
+    <!-- Activity Main -->
+    <string name="main_calculadora_salario">Calculadora de Salário Líquido</string>
+    <string name="main_salario_bruto">Salário Bruto R$</string>
+    <string name="main_num_dependents">Número de Dependentes</string>
+    <string name="main_outros_descontos">Outros Descontos R$</string>
+    <string name="main_btn_calculate">Calcular</string>
+    <string name="main_insert_salary">Por favor confirme o valor</string>
+
+    <!-- Activity Result -->
+    <string name="result_tv_resultado">Resultado</string>
+    <string name="result_tv_1000">1000</string>
+    <string name="result_tv_irrf">IRRF</string>
+    <string name="result_sal_bruto">Salário Bruto</string>
+    <string name="result_inss">INSS</string>
+    <string name="result_desc">Outros Descontos</string>
+    <string name="result_sal_liq">Salário líquido</string>
+    <string name="result_descontos">Descontos</string>
+    <string name="result_back">Voltar</string>
+</resources>
